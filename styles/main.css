@@ -29,4 +29,8 @@ body {
   margin-top: 100px;
   border-radius: 20px;
   overflow: hidden;
+}
+
+.card__details-container {
+  padding: 40px;
 }/*# sourceMappingURL=main.css.map */
