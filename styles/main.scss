@@ -19,29 +19,32 @@
 
 .card__details-container {
     padding: 35px;
+
+    .card__subtitle {
+        font-family: map-get(variables.$fonts, secondary-font), sans-serif;
+        font-weight: map-get(variables.$font-weights, medium);
+        font-size: 1rem;
+        color: map-get(variables.$colors, dark-grayish-blue);
+        letter-spacing: 5px;
+    }
+    
+    .card__title {
+        font-family: map-get(variables.$fonts, primary-font), serif;
+        font-weight: map-get(variables.$font-weights, bold);
+        font-size: 2rem;
+        margin: 25px 0px;
+    }
+    
+    .card__description {
+        @extend .card__subtitle;
+        letter-spacing: normal;
+        line-height: 1.5;
+    }
+    
+    .card__price-container {
+        @include mixins.flex(row);
+    }
 }
 
-.card__subtitle {
-    font-family: map-get(variables.$fonts, secondary-font), sans-serif;
-    font-weight: map-get(variables.$font-weights, medium);
-    font-size: 1rem;
-    color: map-get(variables.$colors, dark-grayish-blue);
-    letter-spacing: 5px;
-}
 
-.card__title {
-    font-family: map-get(variables.$fonts, primary-font), serif;
-    font-weight: map-get(variables.$font-weights, bold);
-    font-size: 2rem;
-    margin: 25px 0px;
-}
 
-.card__description {
-    @extend .card__subtitle;
-    letter-spacing: normal;
-    line-height: 1.5;
-}
-
-.card__price-container {
-    @include mixins.flex(row);
-}

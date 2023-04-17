@@ -53,28 +53,24 @@ body {
 .card__details-container {
   padding: 35px;
 }
-
-.card__subtitle, .card__description {
+.card__details-container .card__subtitle, .card__details-container .card__description {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   color: hsl(228, 12%, 48%);
   letter-spacing: 5px;
 }
-
-.card__title {
+.card__details-container .card__title {
   font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 2rem;
   margin: 25px 0px;
 }
-
-.card__description {
+.card__details-container .card__description {
   letter-spacing: normal;
   line-height: 1.5;
 }
-
-.card__price-container {
+.card__details-container .card__price-container {
   display: flex;
   flex-direction: row;
 }/*# sourceMappingURL=main.css.map */
