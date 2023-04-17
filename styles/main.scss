@@ -16,3 +16,11 @@
 .card__details-container {
     padding: 40px;
 }
+
+.card__subtitle {
+    font-family: map-get(variables.$fonts, secondary-font), sans-serif;
+    font-weight: map-get(variables.$font-weights, medium);
+    font-size: 1rem;
+    color: map-get(variables.$colors, dark-grayish-blue);
+    letter-spacing: 5px;
+}

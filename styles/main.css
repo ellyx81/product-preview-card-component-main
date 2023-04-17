@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-bold-webfont.woff) format(woff), url(../fonts/montserrat-bold-webfont.woff2) format(woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-medium-webfont.woff) format(woff), url(../fonts/montserrat-medium-webfont.woff2) format(woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url(../fonts/fraunces_9pt-bold-webfont.woff) format(woff), url(../fonts/fraunces_9pt-bold-webfont.woff2) format(woff2);
+  font-weight: 700;
+}
 html {
   font-family: sans-serif;
 }
@@ -33,4 +48,12 @@ body {
 
 .card__details-container {
   padding: 40px;
+}
+
+.card__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
 }/*# sourceMappingURL=main.css.map */
