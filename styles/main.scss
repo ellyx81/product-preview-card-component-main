@@ -24,3 +24,9 @@
     color: map-get(variables.$colors, dark-grayish-blue);
     letter-spacing: 5px;
 }
+
+.card__title {
+    font-family: map-get(variables.$fonts, primary-font), serif;
+    font-weight: map-get(variables.$font-weights, bold);
+    font-size: 2rem;
+}
