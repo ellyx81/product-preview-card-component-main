@@ -32,6 +32,7 @@
     .card__title {
         font-family: map-get(variables.$fonts, primary-font), serif;
         font-weight: map-get(variables.$font-weights, bold);
+        color: map-get(variables.$colors, very-dark-blue);
         font-size: 2rem;
         margin: 25px 0px;
     }
@@ -44,8 +45,39 @@
     
     .card__price-container {
         @include mixins.flex(row);
+        margin: 25px 0px;
+
+        .card__price {
+            @extend .card__title;
+            margin: 0px;
+            color: map-get(variables.$colors, dark-cyan);
+        }
+         .card__original-price {
+            @extend .card__description;
+            font-size: .9rem;
+            text-decoration: line-through;
+            margin: 5px 25px;
+         }
     }
 }
+
+.btn {
+    font-family: map-get(variables.$fonts, secondary-font), sans-serif;
+    font-weight: map-get(variables.$font-weights, medium);
+    font-size: 1rem;
+    color: map-get(variables.$colors, main-white);
+    background-color: map-get(variables.$colors, dark-cyan);
+    width: 100%;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: map-get(variables.$colors, very-dark-cyan);
+    }
+}
+
+
 
 
 
