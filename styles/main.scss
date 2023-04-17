@@ -1,9 +1,9 @@
 @use "elements";
 @use "variables";
+@use "mixins";
 
 .card {
-    display: flex;
-    flex-direction: row;
+    @include mixins.flex(row);
     width: 630px;
     margin: auto;
     background-color: map-get(variables.$colors, main-white);
@@ -43,6 +43,5 @@
 }
 
 .card__price-container {
-    display: flex;
-    flex-direction: row;
+    @include mixins.flex(row);
 }
