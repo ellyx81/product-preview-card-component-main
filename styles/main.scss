@@ -4,7 +4,7 @@
 .card {
     display: flex;
     flex-direction: row;
-    max-width: 50vw;
+    width: 650px;
     margin: auto;
     background-color: map-get(variables.$colors, main-white);
     height: 70vh;
@@ -14,7 +14,7 @@
 }
 
 .card__details-container {
-    padding: 40px;
+    padding: 35px;
 }
 
 .card__subtitle {

@@ -37,7 +37,7 @@ body {
 .card {
   display: flex;
   flex-direction: row;
-  max-width: 50vw;
+  width: 650px;
   margin: auto;
   background-color: hsl(0, 0%, 100%);
   height: 70vh;
@@ -47,7 +47,7 @@ body {
 }
 
 .card__details-container {
-  padding: 40px;
+  padding: 35px;
 }
 
 .card__subtitle {
