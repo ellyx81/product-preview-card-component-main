@@ -4,16 +4,21 @@
 .card {
     display: flex;
     flex-direction: row;
-    width: 650px;
+    width: 630px;
     margin: auto;
     background-color: map-get(variables.$colors, main-white);
-    height: 70vh;
+    height: 450px;
     margin-top: 100px;
     border-radius: 20px;
     overflow: hidden;
 }
 
+.card__image{
+    width: 300px;
+}
+
 .card__details-container {
+    background-color: aqua;
     padding: 35px;
 }
 
@@ -29,4 +34,5 @@
     font-family: map-get(variables.$fonts, primary-font), serif;
     font-weight: map-get(variables.$font-weights, bold);
     font-size: 2rem;
+    margin: 25px 0px;
 }
