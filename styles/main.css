@@ -51,11 +51,10 @@ body {
 }
 
 .card__details-container {
-  background-color: aqua;
   padding: 35px;
 }
 
-.card__subtitle {
+.card__subtitle, .card__description {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -68,4 +67,14 @@ body {
   font-weight: 700;
   font-size: 2rem;
   margin: 25px 0px;
+}
+
+.card__description {
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+.card__price-container {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=main.css.map */
