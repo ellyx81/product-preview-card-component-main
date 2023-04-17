@@ -1,6 +1,7 @@
 @use "elements";
 @use "variables";
 @use "mixins";
+@use "popup";
 
 .card {
     @include mixins.flex(row);

@@ -1,0 +1,22 @@
+@use "mixins";
+
+.popup {
+    @include mixins.flex(column);
+    width: 400px;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    height: 100px;
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.2s ;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
