@@ -37,16 +37,25 @@ body {
 .popup {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 200px;
   background-color: white;
   position: absolute;
-  top: 0;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
-  height: 150px;
+  padding: 20px 50px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   text-align: center;
   visibility: hidden;
   transition: transform 0.2s;
+}
+
+.popup__text {
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsl(158, 36%, 37%);
 }
 
 .open-popup {
